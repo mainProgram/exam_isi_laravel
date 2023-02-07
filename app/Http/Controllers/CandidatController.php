@@ -88,7 +88,7 @@ class CandidatController extends Controller
     public function update(UpdateCandidatRequest $request, Candidat $candidat)
     {
         $candidat->update($request->validated());        
-        $candidat->formations()->sync($request->formation_id);
+        $candidat->formations()->syncWithoutDetaching($request->formation_id);
         return back()->with('success', 'Le candidat a été modifié !');
     }
 

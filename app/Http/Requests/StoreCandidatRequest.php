@@ -45,8 +45,8 @@ class StoreCandidatRequest extends FormRequest
             'nom.min' => 'Taille minimum de 2',
             'niveau_etude.min' => 'Taille minimum de 3',
             'prenom.min' => 'Taille minimum de 2',
-            'prenom.min' => 'Âge minimum de 12',
-            'prenom.max' => 'Âge maximum de 35',
+            'age.min' => 'Âge minimum de 12',
+            'age.max' => 'Âge maximum de 35',
             'email.email' => 'Email invalide',
         ];
     }
